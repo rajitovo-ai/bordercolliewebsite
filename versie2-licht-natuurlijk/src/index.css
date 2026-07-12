@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #faf8f5;
+    color: #3a2e1f;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .text-gradient-forest {
+    background: linear-gradient(135deg, #2d5016 0%, #4a7c2a 50%, #2d5016 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .card-natural {
+    background: #ffffff;
+    border: 1px solid rgba(139, 111, 71, 0.15);
+    box-shadow: 0 2px 12px rgba(92, 64, 51, 0.06);
+    transition: all 0.3s ease;
+  }
+  .card-natural:hover {
+    box-shadow: 0 4px 20px rgba(92, 64, 51, 0.12);
+    transform: translateY(-2px);
+  }
+  .btn-forest {
+    background: linear-gradient(135deg, #2d5016 0%, #4a7c2a 100%);
+    color: #faf8f5;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .btn-forest:hover {
+    background: linear-gradient(135deg, #4a7c2a 0%, #6b8e4e 100%);
+    box-shadow: 0 4px 15px rgba(45, 80, 22, 0.25);
+  }
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(139, 111, 71, 0.2), transparent);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f0e8;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 111, 71, 0.3);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 111, 71, 0.5);
+}
